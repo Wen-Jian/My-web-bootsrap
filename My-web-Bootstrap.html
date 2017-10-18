@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang = "zh">
+<head>
+  <meta charset = "utf-8">
+  <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link href="css/style.css" rel="stylesheet">
+  <title>Wen-Jian's Website-bootstrap version</title>
+</head>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <div id = "Nav">
+   <nav class="navbar-fixed-top navbar my-nav navbar-default">
+      <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="my-brand" href="#">My resume</a>
+        </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav pull-right">
+            <li><a class="btn btn-default my-btn" href="#about-me-container" role="button">about me</a></li>
+            <li><a class="btn btn-default my-btn" href="#autography" role="button">autography</a></li>
+            <li><a class="btn btn-default my-btn" href="#my-work-container" role="button">My work</a></li>
+            <li><a class="btn btn-default my-btn" href="#Contact-me" role="button">Contact me</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+  </nav>
+  </div>
+  <div id = "about-me-container" class = "container">
+    <div class = "row">
+      <h1>About me</h1>
+      <div class = "photo col-xs-12 col-sm-5 col-md-4 col-lg-3">
+        <img src = "image/網頁大頭照.jpg" class="img-responsive center-block">
+      </div>
+      <div class = "brief-intro col-xs-12 col-sm-7 col-md-8 col-lg-9">
+        <h3>曾文建</h3>
+        <p>目前正在學習ruby on rails，立志成為兼具手機(IOS)軟體開發能力的全端工程師</p>
+        <table class="table table-striped table-hover">
+          <tr>
+            <td>Birth</td>
+            <td>1990</td>
+          </tr>
+          <tr>
+            <td>工作經驗</td>
+            <td>兩年(本業年資零)</td>
+          </tr>
+          <tr>
+            <td>工作技能</td>
+            <td>HTML、CSS、Bootstrap、swift3、git</td>
+          </tr>
+          <tr>
+            <td>學經歷</td>
+            <td>
+              <p>1.國立陽明大學生化暨分子生物學研究所</p>
+              <p>2.自學swift 3</p>
+              <p>3.大航道計畫第一梯次結業(2018)</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div id = "my-work-container" class = "container">
+    <div class =  "row">
+      <h1>Work gallery</h1>      
+      <div class = "work-gallery col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div id="work-carousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#work-carousel" data-slide-to="0" class="active"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class = "item active">
+              <img src="image/作品.jpg" alt="" class ="img-responsive center-block My-work" >
+              <div class = "img-info center-block">
+                <h4>IOS 日記APP</h4>
+                <p>利用swift 3，結合內建資料庫(core data)框架，提供相片與文字紀錄，讓使用者即時記錄生活美好時刻</p>
+              </div>
+            </div>
+          </div>
+          <a class="left carousel-control" href="#work-carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">上一張</span>
+          </a>
+          <a class="right carousel-control" href="#work-carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">下一張</span>
+          </a>
+        </div>  
+        
+      </div>      
+    </div>
+  </div>
+  <div id = "Contact-me" class = "container">
+    <div class = "row">
+      <h1>Contact me</h1>
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+         <div class = "Contact-form">
+         <form action="" class = "form">
+            <div class = "form-group">
+              <label for="UID">User name</label>
+              <input type="text" name = "UID"  class = "form-control" placeholder = "Input">
+            </div>
+            <div class = "form-group">
+              <label for="message-category">message category</label>
+              <select name="message-category" class = "form-control">
+              <option value="0">請選擇</option>
+              <option value="1">面試邀請</option>
+              <option value="2">工作訊息</option>
+              <option value="3">閒聊</option>
+              </select>
+            </div>
+            <div class = "form-group">
+              <label for="message">message</label>
+              <textarea name="message" rows="5" class = "form-control" placeholder = "entr your message"></textarea>
+            </div>
+            <div class="form-group pull-right">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">送出</button>
+              </div>
+            </div>
+      
+          </form>
+        </div>
+      </div>
+      
+    </div>
+  </div>  
+</body>
+</html>
